@@ -14,6 +14,7 @@ function BST() {
  this.inOrder = inOrder;
  this.preOrder = preOrder;
  this.postOrder = postOrder;
+ this.max = max;
  }
 
 function insert(data) {
@@ -131,3 +132,14 @@ function find(data) {
   }
   return current;
 }
+
+// return the max vale of the BST
+function max() {
+  // set node to the root value
+  var node = this.root;
+  // loop until there is no more values to the right
+  while( node.right != null ) {
+    node = node.right; // move to the right value
+  } // end while
+  return node.data;
+} // end max
