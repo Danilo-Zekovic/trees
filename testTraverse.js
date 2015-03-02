@@ -18,3 +18,5 @@ print();
 print("Postorder traversal: ");
 nums.postOrder(nums.root);
 print();
+
+print("Max value of BST: " + nums.max());
