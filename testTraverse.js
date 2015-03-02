@@ -1,3 +1,8 @@
+/*
+ * Danilo Zekovic
+ * February-March 2015
+ * driver for Binary Search Tree
+ */
 load("BSTtree.js");
 load("traverse.js");
 
@@ -20,3 +25,4 @@ nums.postOrder(nums.root);
 print();
 
 print("Max value of BST: " + nums.max());
+print("Min value of BST: " + nums.min());
