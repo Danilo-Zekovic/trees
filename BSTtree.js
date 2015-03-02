@@ -15,6 +15,7 @@ function BST() {
  this.preOrder = preOrder;
  this.postOrder = postOrder;
  this.max = max;
+ this.min = min;
  }
 
 function insert(data) {
@@ -143,3 +144,13 @@ function max() {
   } // end while
   return node.data;
 } // end max
+
+// return the min value of the BST
+// similar to max
+function min() {
+  var node = this.root;
+  while( node.left != null ){
+    node = node.left;
+  }
+  return node.data;
+}
